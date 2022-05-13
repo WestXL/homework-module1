@@ -260,3 +260,13 @@ textarea {
     width: 500px;
     height:100px;
 }
+
+.button input{
+    background-color: #4977D1;
+    color: white;
+    align-items: right;
+    border: none;
+    height: 40px;
+    width: 120px;
+    margin-left:385px;
+}
