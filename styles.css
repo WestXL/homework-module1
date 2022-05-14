@@ -291,7 +291,7 @@ textarea {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     margin-right:40px;
-    width: 380px;
+    width: 480px;
     text-align: center;
     background-color: #852b1b;
     color: white;
@@ -304,11 +304,11 @@ textarea {
 
 #img1 img{
     margin-right:40px;
-    margin-top: -21px;
+    margin-top: -22px;
     background-color: #852b1b;
     text-align: center;
     vertical-align: middle;
-    width: 400px;
+    width: 500px;
     vertical-align: middle;
 }
 
@@ -321,7 +321,7 @@ textarea {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     margin-right:40px;
-    width: 380px;
+    width: 480px;
     text-align: center;
     background-color: #852b1b;
     color: white;
@@ -334,10 +334,10 @@ textarea {
 
 #img2 img{
     margin-right:40px;
-    margin-top: -21px;
+    margin-top: -22px;
     background-color: #852b1b;
     text-align: center;
     vertical-align: middle;
-    width: 400px;
+    width: 500px;
     vertical-align: middle;
 }
