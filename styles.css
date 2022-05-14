@@ -16,6 +16,11 @@ header {
     background: no-repeat lightgrey url(images/cliff_rock.jpg);
     background-size: 1500px;
 }
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background-size: 1500px;
+}
+
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
     width: 684px;
@@ -276,4 +281,63 @@ textarea {
     height: 40px;
     width: 120px;
     margin-left:385px;
+}
+
+#text1 {
+    text-align: center;
+}
+
+#text1 h4 {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:40px;
+    width: 380px;
+    text-align: center;
+    background-color: #852b1b;
+    color: white;
+    padding: 10px;
+}
+
+#img1 {
+    text-align: center;
+}
+
+#img1 img{
+    margin-right:40px;
+    margin-top: -21px;
+    background-color: #852b1b;
+    text-align: center;
+    vertical-align: middle;
+    width: 400px;
+    vertical-align: middle;
+}
+
+#text2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#text2 h4 {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:40px;
+    width: 380px;
+    text-align: center;
+    background-color: #852b1b;
+    color: white;
+    padding: 10px;
+}
+
+#img2 {
+    text-align: center;
+}
+
+#img2 img{
+    margin-right:40px;
+    margin-top: -21px;
+    background-color: #852b1b;
+    text-align: center;
+    vertical-align: middle;
+    width: 400px;
+    vertical-align: middle;
 }
