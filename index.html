@@ -34,6 +34,12 @@
                 </div>
             </header>
 
+            <section id="timeofday">
+                <span>
+                    Your Current Local Time:
+                </span>
+                <span id="clock"></span>
+            </section>
 
             <!-- Main Content -->
             <main>
@@ -101,5 +107,69 @@
                 </div>
             </footer>
         </div> <!-- End Container-->
+        <script>
+            function currentTime() {
+                var d = new Date();
+                var hr = d.getHours();
+                var min = d.getMinutes();
+                var sec = d.getSeconds();
+                var ampm;
+
+                if (sec < 10) {
+                    sec = "0" + sec;
+                }
+
+                if (min < 10) {
+                    min = "0" + min;
+                }
+
+                if (hr == 12) {
+                    ampm = "PM";
+                } else if (hr > 12) {
+                    hr -= 12;
+                    ampm = "PM";
+                } else {
+                    ampm = "AM";
+                }
+
+                // Time zone
+                var utchr = d.getUTCHours();
+                var timeDiff = utchr - hr;
+                var adjTimeDiff = Math.abs(timeDiff);
+                // console.log(adjTimeDiff);
+                var timeZone;
+                // switch (adjTimeDiff){
+                //     case 7:
+                //         timeZone = "PT";
+                //     case 6:
+                //         timeZone = "MT";
+                //     case 5:
+                //         timeZone = "CT";
+                //     case 4:
+                //         timeZone = "ET";
+                //     default:
+                //         timeZone = "";
+                // }
+
+                if (adjTimeDiff == 4) {
+                    timeZone = "ET";
+                } else if (adjTimeDiff == 5) {
+                    timeZone = "CT";
+                } else if (adjTimeDiff == 6) {
+                    timeZone = "MT";
+                } else if (adjTimeDiff == 7) {
+                    timeZone = "PT";
+                } else {
+                    timeZone = "unknown";
+                }
+
+                var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
+
+                document.getElementById("clock").innerText = time;
+
+                setInterval(currentTime, 1000);
+            }
+            currentTime();
+        </script>
     </body>
 </html>
