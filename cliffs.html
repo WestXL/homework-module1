@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>California's Greatest Cliffs</title>
         <meta charset="utf-8">
         <!-- Font Awesome -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet"
-            href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body id="cliffs">
         <!-- Container to wrap everything -->
         <div id="container">
-
             <!-- Brand of website -->
             <header>
                 <!-- <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564"> -->
                 <div class="main-header">
                     <div class="logo">
-                        <img src="images/logo.png" alt="Great Cliffs Logo"
-                            width="125">
+                        <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
                     </div>
-
                     <!-- Main Navigation -->
                     <nav class="main-menu">
                         <ul>
@@ -33,41 +30,35 @@
                     </nav> <!-- End Main Navigation -->
                 </div>
             </header>
-            
             <section id="timeofday">
-                <span>
-                    Your Current Local Time:
-                </span>
+                <span> Your Current Local Time: </span>
                 <span id="clock"></span>
             </section>
-
             <!-- Main Content -->
             <main>
                 <h1>California's Greatest Cliffs</h1>
                 <!-- <h2>What is so unique about California cliffs?</h2> -->
-                <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
-                <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
+                <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South
+                    Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
+                <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus
+                    students because of its close proximity.</p>
                 <div id="text1">
                     <h4>West Cliff</h4>
                     <h4>North Cliff</h4>
                 </div>
-
                 <div id="img1">
                     <img src="images/cliff-west-sea.jpg">
                     <img src="images/cliff-north-mountain.jpg">
                 </div>
-
                 <div id="text2">
                     <h4>East Cliff</h4>
                     <h4>South Cliff</h4>
                 </div>
-
                 <div id="img2">
                     <img src="images/cliff-east-river.jpg">
                     <img src="images/cliff-south-canyon.jpg">
                 </div>
             </main> <!-- End Main Content -->
-
             <section>
                 <ul id="partners">
                     <!-- <li class="partner">
@@ -96,7 +87,6 @@
                     </li> -->
                 </ul>
             </section>
-
             <!-- Footer Information -->
             <footer>
                 <div id="nondisclaimer">
@@ -108,102 +98,14 @@
                     </div>
                 </div>
                 <div id="disclaimer">
-                    <p>This website is designed and created solely for
-                        educational purposes only at Westcliff University. All
-                        contents are not intended for any commercial gain or
-                        use.</p>
+                    <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
                 </div>
             </footer>
         </div> <!-- End Container-->
-
-        <script>
-            function currentTime() {
-                var d = new Date();
-                var hr = d.getHours();
-                var min = d.getMinutes();
-                var sec = d.getSeconds();
-                var ampm;
-
-                if (sec < 10) {
-                    sec = "0" + sec;
-                }
-
-                if (min < 10) {
-                    min = "0" + min;
-                }
-
-                if (hr == 12) {
-                    ampm = "PM";
-                } else if (hr > 12) {
-                    hr -= 12;
-                    ampm = "PM";
-                } else {
-                    ampm = "AM";
-                }
-
-                // Time zone
-                var utchr = d.getUTCHours();
-                // console.log(utchr);
-                var timeDiff = utchr - hr;
-                // console.log(hr);
-                var adjTimeDiff = Math.abs(timeDiff);
-                // console.log(adjTimeDiff);
-                var timeZone;
-                // switch (adjTimeDiff){
-                //     case 7:
-                //         timeZone = "PT";
-                //     case 6:
-                //         timeZone = "MT";
-                //     case 5:
-                //         timeZone = "CT";
-                //     case 4:
-                //         timeZone = "ET";
-                //     default:
-                //         timeZone = "";
-                // }
-
-                if (adjTimeDiff == 4) {
-                    timeZone = "ET";
-                } else if (adjTimeDiff == 5) {
-                    timeZone = "CT";
-                } else if (adjTimeDiff == 6) {
-                    timeZone = "MT";
-                } else if (adjTimeDiff == 7) {
-                    timeZone = "PT";
-                } else {
-                    timeZone = "unknown";
-                }
-
-                var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
-
-                document.getElementById("clock").innerText = time;
-
-                setInterval(currentTime, 1000);
-            }
-            currentTime();
-
-            // array to store photos
-            var photos = []; 
-            // element to store the image names
-            var fileNames = [];
-            // store html list that contains an image
-            var imageList = [];
-            // store the assembled image list codes
-            var image;
-            // open list tag
-            var openList = "<li class='partner'>";
-            // close list tag
-            var closeList = "</li>";
-
-            // create a loop to create 6 imgs starting with index of 0
-            for (var i = 0; i < 6; i++) {
-                // <li id="photo"><img src="images/winterland2.jpg"></li>
-                fileNames.push("partner-" + (i + 1));
-                photos.push("<img src='images/partners/"+fileNames[i]+".png'>");
-                image = openList + photos[i] + closeList;
-                imageList.push(image);
-            }
-            document.getElementById("partners").innerHTML = imageList;
-        </script>
+        <!-- Digital Clock -->
+        <script src="js/digclock.js"></script>
+        <!-- PARTNERS -->
+        <script src="js/site_script.js"></script>
     </body>
+
 </html>
