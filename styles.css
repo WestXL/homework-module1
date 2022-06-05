@@ -454,6 +454,15 @@ textarea {
     font-size:1.15em;
 }
 
+#activities main #result p {
+    margin-left:auto;
+}
+
 #activities main #displaySelected #sendinfo input[type="email"] {
     width: 200px;
 }
+
+/* #sendinfo {
+    float: right;
+    /* bottom: 0; */
+} */
