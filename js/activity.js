@@ -5,6 +5,6 @@ $(document).ready(function(){
     })
 
     $("td[id='selectable']").click(function() {
-            $(this).toggleClass("highlight");
+        $(this).toggleClass("highlight");
     });
 });
