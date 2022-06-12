@@ -1,11 +1,15 @@
 function currentTime() {
     var d = new Date();
     var hr = d.getHours();
+    // console.log(hr);
     var min = d.getMinutes();
     var sec = d.getSeconds();
     var ampm;
     var utchr = d.getUTCHours();
     // console.log(utchr);
+    if (utchr < hr) {
+        utchr += 24;
+    }
     var timeDiff = utchr - hr;
 
     if (sec < 10) {
@@ -48,6 +52,6 @@ function currentTime() {
 
     document.getElementById("clock").innerText = time;
 
-    setInterval(currentTime, 1000);
+    setInterval(currentTime, 3000);
 }
 currentTime();
