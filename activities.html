@@ -4,43 +4,82 @@
     <head>
         <title>Introducing California's Greatest Cliffs</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport"
+              content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+              href="styles.css">
     </head>
 
     <body id="activities">
         <!-- Container to wrap everything -->
         <div id="container">
             <!-- Brand of website -->
-            <header>
-                <!-- <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff"
-                    width="1280" height="564"> -->
-                <div class="main-header">
+            <nav
+                 class="main-header navbar navbar-expand-lg navbar-dark sticky-top position: absolute">
+                <a class="navbar-brand"
+                   href="#">
                     <div class="logo">
-                        <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+                        <img src="images/logo.png"
+                             alt="Great Cliffs Logo">
                     </div>
-                    <!-- Main Navigation -->
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="cliffs.html">Cliffs</a></li>
-                            <li class="active"><a href="activities.html">Activities</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav> <!-- End Main Navigation -->
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarContent"
+                        aria-controls="navbarContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="main-menu collapse navbar-collapse"
+                     id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="cliffs.html">Cliffs</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link"
+                               href="activities.html">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+            <!-- <section id="timeofday">
+                            <span> Your Current Local Time: </span>
+                            <span id="clock"></span>
+                        </section> -->
+            <!-- Main Content -->
+            <header>
             </header>
-            <section id="timeofday">
+            <!-- <section id="timeofday">
                 <span> Your Current Local Time: </span>
                 <span id="clock"></span>
-            </section>
+            </section> -->
             <!-- Main Content -->
             <main>
                 <h1>Activities</h1>
-                <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and
-                    recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please
-                    contact them directly. For a list of activities, please refer to the table below:</p>
+                <p>There are many planned activities at all the cliff sites. Some are scheduled
+                    daily, weekly, monthly and yearly. These activities are not however run by the
+                    state park and recreational department. They are operated and manage by private
+                    vendors but are partners with the state department. Therefore, for schedule
+                    inquiries or information, please contact them directly. For a list of
+                    activities, please refer to the table below:</p>
                 <table>
                     <caption>Activities at the Cliffs</caption>
                     <thead>
@@ -103,13 +142,38 @@
                         <h4> My selected activities to enquire: </h4>
                     </div>
                     <div id="sendinfo">
-                        <input type="email" placeholder="johndoe@gmail.com">
+                        <input type="email"
+                               placeholder="johndoe@gmail.com">
                         <button> Get Info </button>
                     </div>
                 </div>
             </main> <!-- End Main Content -->
             <section>
                 <ul id="partners">
+                    <li class="partner col-6 col-sm-4 col-md-3 col-lg-1">
+                        <img src="images/partners/partner-bustour.png"
+                             alt="Partner Bus Tours">
+                    </li>
+                    <li class="partner col-6 col-sm-4 col-md-3 col-lg-1">
+                        <img src="images/partners/partner-cabinrental.png"
+                             alt="Partner Cabin Rental">
+                    </li>
+                    <li class="partner col-6 col-sm-4 col-md-3 col-lg-1">
+                        <img src="images/partners/partner-campingadv.png"
+                             alt="Partner Camping Adventure">
+                    </li>
+                    <li class="partner col-6 col-sm-4 col-md-3 col-lg-1">
+                        <img src="images/partners/partner-collegetours.png"
+                             alt="Partner College Tours">
+                    </li>
+                    <li class="partner col-6 col-sm-4 col-md-3 col-lg-1">
+                        <img src="images/partners/partner-rentalbike.png"
+                             alt="Partner Bike Rentals">
+                    </li>
+                    <li class="partner col-6 col-sm-4 col-md-3 col-lg-1">
+                        <img src="images/partners/partner-tourgroup.png"
+                             alt="Partner Tour Group">
+                    </li>
                 </ul>
             </section>
             <!-- Footer Information -->
@@ -117,21 +181,33 @@
                 <div id="nondisclaimer">
                     <div class="copy">&copy Copyright 2020 :: GreatCliffs.com</div>
                     <div class="social">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#"
+                           class="fa fa-facebook"></a>
+                        <a href="#"
+                           class="fa fa-instagram"></a>
+                        <a href="#"
+                           class="fa fa-twitter"></a>
                     </div>
                 </div>
                 <div id="disclaimer">
-                    <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+                    <p>This website is designed and created solely for educational purposes only at
+                        Westcliff University. All contents are not intended for any commercial gain
+                        or use.</p>
                 </div>
             </footer>
         </div> <!-- End Container-->
         <!-- Digital Clock -->
-        <script src="js/digclock.js"></script>
+        <!-- <script src="js/digclock.js"></script> -->
         <!-- PARTNERS -->
-        <script src="js/site_script.js"></script>
-        <script src="js/activity.js"></script>
+        <!-- <script src="js/site_script.js"></script> -->
+        <!-- <script src="js/activity.js"></script> -->
+        <!-- Bootstrap jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap Popper -->
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 
 </html>

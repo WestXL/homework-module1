@@ -1,43 +1,43 @@
 header {
     width: 100%;
-    min-height: 400px;
+    min-height: 630px;
     /* height: 100%; */
     padding-top: 3em;
     padding-left: 3em;
     padding-right: 3em;
+    margin-top: -230px;
+}
+
+.navbar {
+    margin: 2em;
 }
 
 #home header {
-    /* width: auto;
-    height: auto; */
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    /* background-size: 100%; */
+    background-size: cover;
 }
 
 #activities header {
     background: no-repeat lightgrey url(images/runfly.jpg);
-    background-size: 1500px;
+    background-size: cover;
 }
 
 #contact header {
     background: no-repeat lightgrey url(images/cliff_rock.jpg);
-    background-size: 1500px;
+    background-size: cover;
 }
 
 #cliffs header {
     background: no-repeat lightgrey url(images/forest_cliff.jpg);
-    background-size: 1500px;
+    background-size: cover;
 }
 
 .main-header {
-    background-color: rgb(255, 255, 255, 0.8);
-    /* width: 684px; */
-    /* margin: 2em auto 0 auto; */
+    background-color: rgba(0, 0, 0, 0.5);
     min-height: 100px;
-    height: 100px;
 }
 
-.main-header .logo img {
+.logo img {
     width: 100px;
     height: 100px;
     margin: 0 2em 0 0;
@@ -45,8 +45,12 @@ header {
 }
 
 .main-menu {
-    /* margin-left: 277px; */
     font-weight: 400;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .main-menu ul li {
@@ -58,12 +62,12 @@ header {
     border-left: 1px solid rgba(202, 204, 202, 0.6);
     line-height: 100px;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .main-menu ul li a {
     text-decoration: none;
-    color: #888;
+    color: rgb(255, 255, 255);
 }
 
 .main-menu ul li a:hover {
@@ -93,7 +97,7 @@ main h1 {
 }
 
 main h2 {
-    margin: 0px 40px 15px 40px;
+    margin: 40px;
 }
 
 main p {
@@ -127,7 +131,7 @@ section #partners {
     /* width: 1200px; */
     /* padding: 2em 0 2em 0; */
     padding: 2em;
-    margin: 2em;
+    margin: 0em;
     text-align: center;
 }
 
@@ -339,15 +343,15 @@ textarea {
     height: 100px;
 }
 
-.button input {
-    /* background-color: #4977D1; */
+.button #subBtn {
+    /* background-color: #95b0e6; */
     color: white;
     align-items: right;
     border: none;
     height: 40px;
     width: 120px;
     margin-top: auto;
-    margin-left: 385px;
+    margin-left: 380px;
 }
 
 #text1 {
@@ -426,6 +430,7 @@ textarea {
 .randomcode {
     display: inline-flex;
     margin-left: 236px;
+    align-items: right;
 }
 
 .randomcode input {
@@ -440,6 +445,7 @@ textarea {
     padding: 10px;
     margin-top: 3px;
     margin-left: 15px;
+    align-items: right;
 }
 
 .highlight {
@@ -489,19 +495,8 @@ textarea {
     .main-menu {
         /* margin-left: 277px; */
         font-weight: 400;
-        margin-top: -8px;
-    }
-
-    .main-menu ul li {
-        list-style-type: none;
-        display: inline;
-        float: left;
-        padding-left: 25px;
-        padding-right: 25px;
-        border-left: 1px solid rgba(202, 204, 202, 0.6);
-        line-height: 84px;
-        text-transform: uppercase;
-        font-size: 10px;
+        /* margin-top: -8px; */
+        /* min-height: 100px; */
     }
 
     .main-menu ul li a {
@@ -548,7 +543,6 @@ textarea {
 
     .logo img {
         position: relative;
-        /* bottom: 8px; */
     }
 
     .navbar-toggler {
@@ -562,9 +556,9 @@ textarea {
 
     .main-menu {
         width: 200px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
-        margin-top: 521px;
+        margin-top: 530px;
         right: 1.7em;
     }
 
@@ -576,12 +570,4 @@ textarea {
         padding: 3em 1em 3em 1em;
         margin: 0;
     }
-
-    #home .main-col-content {
-        padding: 25px;
-        min-height: 450px;
-        margin-top: 1em;
-    }
-
-
 }
