@@ -1,34 +1,35 @@
 header {
     width: 100%;
     min-height: 630px;
-    /* height: 100%; */
+    height: auto;
     padding-top: 3em;
     padding-left: 3em;
     padding-right: 3em;
-    margin-top: -230px;
+    margin-top: -180px;
 }
 
 .navbar {
     margin: 2em;
+    /* margin-top: 2em; */
 }
 
 #home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background: no-repeat lightgrey center url(images/cliff_ocean.jpg);
     background-size: cover;
 }
 
 #activities header {
-    background: no-repeat lightgrey url(images/runfly.jpg);
+    background: no-repeat lightgrey center url(images/runfly.jpg);
     background-size: cover;
 }
 
 #contact header {
-    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background: no-repeat lightgrey center url(images/cliff_rock.jpg);
     background-size: cover;
 }
 
 #cliffs header {
-    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background: no-repeat lightgrey center url(images/forest_cliff.jpg);
     background-size: cover;
 }
 
@@ -354,63 +355,20 @@ textarea {
     margin-left: 380px;
 }
 
-#text1 {
-    text-align: center;
+.card-header {
+    background-color: #852b1b;
 }
 
-#text1 h4 {
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 40px;
-    width: 480px;
-    text-align: center;
-    background-color: #852b1b;
+.card-header h4 {
     color: white;
-    padding: 10px;
 }
 
-#img1 {
-    text-align: center;
+.img1 img {
+    width: 100%;
 }
 
-#img1 img {
-    margin-right: 40px;
-    margin-top: -22px;
-    background-color: #852b1b;
-    text-align: center;
-    vertical-align: middle;
-    width: 500px;
-    vertical-align: middle;
-}
-
-#text2 {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#text2 h4 {
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 40px;
-    width: 480px;
-    text-align: center;
-    background-color: #852b1b;
-    color: white;
-    padding: 10px;
-}
-
-#img2 {
-    text-align: center;
-}
-
-#img2 img {
-    margin-right: 40px;
-    margin-top: -22px;
-    background-color: #852b1b;
-    text-align: center;
-    vertical-align: middle;
-    width: 500px;
-    vertical-align: middle;
+.img2 img {
+    width: 100%;
 }
 
 /* Time */
@@ -519,6 +477,8 @@ textarea {
 }
 
 @media (max-width: 768px) {
+
+
     footer #nondisclaimer .copy {
         padding: 3.5em 0em 3.5em 0em;
         text-align: center;
@@ -540,6 +500,11 @@ textarea {
 }
 
 @media (max-width: 991px) {
+    header {
+        width: 100%;
+        min-height: 450px;
+        margin-top: -180px;
+    }
 
     .logo img {
         position: relative;
@@ -569,5 +534,13 @@ textarea {
     main {
         padding: 3em 1em 3em 1em;
         margin: 0;
+    }
+
+    @media (max-width: 575px) {
+        header {
+            width: 100%;
+            min-height: 300px;
+            margin-top: -180px;
+        }
     }
 }
