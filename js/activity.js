@@ -9,8 +9,8 @@ $(document).ready(function () {
 
         if ($(this).hasClass("highlight")) {
             $('#exampleModalCenter').modal('show');
-            var x = document.getElementById("modalBackdrop");
-            x.style.visibility = "visible";
+            // var x = document.getElementById("modalBackdrop");
+            // x.style.visibility = "visible";
             var location;
             if ($(this).index("td") % 5 == 1) {
                 location = "West Cliff";
@@ -27,8 +27,8 @@ $(document).ready(function () {
             $("#result p:contains(" + $(this).text() + ")").remove();
             if ($("#result").has("p").length == false) {
                 $('#exampleModalCenter').modal('hide');
-                var x = document.getElementById("modalBackdrop");
-                x.style.visibility = "hidden";
+                // var x = document.getElementById("modalBackdrop");
+                // x.style.visibility = "hidden";
             }
         }
     });
@@ -37,6 +37,6 @@ $(document).ready(function () {
 function unselect() {
     $("td[id='selectable']").removeClass("highlight");
     $("#result").empty();
-    var x = document.getElementById("modalBackdrop");
-    x.style.visibility = "hidden";
+    // var x = document.getElementById("modalBackdrop");
+    // x.style.visibility = "hidden";
 }

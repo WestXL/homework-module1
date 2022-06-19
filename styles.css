@@ -466,15 +466,16 @@ textarea {
 }
 
 .modal-backdrop {
-    display: none !important;
+    /* display: none !important; */
+    pointer-events: none;
 }
 
 .modal {
     pointer-events: none;
-    z-index: auto;
+    /* z-index: auto; */
 }
 
-.modalBackdrop {
+/* .modalBackdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -483,7 +484,7 @@ textarea {
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
     visibility: hidden;
-}
+} */
 
 /* .modal-backdrop.fade {
     opacity: 0;
