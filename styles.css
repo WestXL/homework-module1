@@ -279,11 +279,12 @@ td:first-child {
     font-weight: bold;
 }
 
-legend {
+.legend {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: #4977D1;
+    width: auto;
 }
 
 form {
@@ -292,6 +293,7 @@ form {
 }
 
 fieldset {
+    padding: 2em;
     border: 1px solid #9ed034;
 }
 
