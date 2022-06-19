@@ -8,26 +8,35 @@ $(document).ready(function () {
         $(this).toggleClass("highlight");
 
         if ($(this).hasClass("highlight")) {
-            $("#displaySelected").css("visibility", "visible");
-            $("#displaySelected").css("margin-top", "2em");
+            $('#exampleModalCenter').modal('show');
+            var x = document.getElementById("modalBackdrop");
+            x.style.visibility = "visible";
             var location;
-            if ($(this).index("td")%5 == 1) {
+            if ($(this).index("td") % 5 == 1) {
                 location = "West Cliff";
                 console.log(location);
-            } else if ($(this).index("td")%5 == 2) {
+            } else if ($(this).index("td") % 5 == 2) {
                 location = "North Cliff";
-            } else if ($(this).index("td")%5 == 3) {
+            } else if ($(this).index("td") % 5 == 3) {
                 location = "East Cliff";
-            } else if ($(this).index("td")%5 == 4) {
+            } else if ($(this).index("td") % 5 == 4) {
                 location = "South Cliff";
             }
             $("#result").append("<p>" + $(this).text() + " at " + location + "</p>");
         } else {
             $("#result p:contains(" + $(this).text() + ")").remove();
             if ($("#result").has("p").length == false) {
-                $("#displaySelected").css("visibility", "hidden");
-                $("#displaySelected").css("margin-top", "0");
+                $('#exampleModalCenter').modal('hide');
+                var x = document.getElementById("modalBackdrop");
+                x.style.visibility = "hidden";
             }
         }
     });
 });
+
+function unselect() {
+    $("td[id='selectable']").removeClass("highlight");
+    $("#result").empty();
+    var x = document.getElementById("modalBackdrop");
+    x.style.visibility = "hidden";
+}

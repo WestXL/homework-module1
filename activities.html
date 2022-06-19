@@ -17,6 +17,7 @@
     </head>
 
     <body id="activities">
+        <div></div>
         <!-- Container to wrap everything -->
         <div id="container">
             <!-- Brand of website -->
@@ -29,7 +30,7 @@
                              alt="Great Cliffs Logo">
                     </div>
                 </a>
-                <button class="navbar-toggler"
+                <button class="navbar-toggler mt-1"
                         type="button"
                         data-toggle="collapse"
                         data-target="#navbarContent"
@@ -75,69 +76,75 @@
             <main>
                 <h1>Activities</h1>
                 <p>There are many planned activities at all the cliff sites. Some are scheduled
-                    daily, weekly, monthly and yearly. These activities are not however run by the
+                    daily, weekly, monthly and yearly. These activitie`s are not however run by the
                     state park and recreational department. They are operated and manage by private
                     vendors but are partners with the state department. Therefore, for schedule
                     inquiries or information, please contact them directly. For a list of
                     activities, please refer to the table below:</p>
-                <table>
-                    <caption>Activities at the Cliffs</caption>
-                    <thead>
-                        <tr>
-                            <th>Activity</th>
-                            <th>West Cliff</th>
-                            <th>North Cliff</th>
-                            <th>East Cliff</th>
-                            <th>South Cliff</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Hiking</td>
-                            <td>College Hikes</td>
-                            <td>Family Fun</td>
-                            <td>Treasure Trails</td>
-                            <td>Canyon Explorer</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>Kayak</td>
-                            <td>Western Kayak Meetup</td>
-                            <td>Not Available</td>
-                            <td>Youth Kayaking</td>
-                            <td>Kayak Down</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>Skydiving</td>
-                            <td>Seacliff Diving</td>
-                            <td>Sky is the limit</td>
-                            <td>Not Available</td>
-                            <td>Sky Diving for Beginners</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>Biking</td>
-                            <td>Bicycle for One</td>
-                            <td>Not Available</td>
-                            <td>Bike Meetup Group</td>
-                            <td>Not Available</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>Camping</td>
-                            <td>Youth Camp</td>
-                            <td>Rent a Tent</td>
-                            <td>Campground Adventure</td>
-                            <td>Sunset Camping</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div id="displaySelected">
+                <div class="container-fluid ">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <table class="table caption-top  table-responsive">
+                                <caption>Activities at the Cliffs</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Activity</th>
+                                        <th>West Cliff</th>
+                                        <th>North Cliff</th>
+                                        <th>East Cliff</th>
+                                        <th>South Cliff</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Hiking</td>
+                                        <td>College Hikes</td>
+                                        <td>Family Fun</td>
+                                        <td>Treasure Trails</td>
+                                        <td>Canyon Explorer</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Kayak</td>
+                                        <td>Western Kayak Meetup</td>
+                                        <td>Not Available</td>
+                                        <td>Youth Kayaking</td>
+                                        <td>Kayak Down</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Skydiving</td>
+                                        <td>Seacliff Diving</td>
+                                        <td>Sky is the limit</td>
+                                        <td>Not Available</td>
+                                        <td>Sky Diving for Beginners</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Biking</td>
+                                        <td>Bicycle for One</td>
+                                        <td>Not Available</td>
+                                        <td>Bike Meetup Group</td>
+                                        <td>Not Available</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Camping</td>
+                                        <td>Youth Camp</td>
+                                        <td>Rent a Tent</td>
+                                        <td>Campground Adventure</td>
+                                        <td>Sunset Camping</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="displaySelected">
                     <div id="result">
                         <h4> My selected activities to enquire: </h4>
                     </div>
@@ -145,6 +152,54 @@
                         <input type="email"
                                placeholder="johndoe@gmail.com">
                         <button> Get Info </button>
+                    </div>
+                </div> -->
+                <!-- Button trigger modal -->
+                <button type="button"
+                        class="btn btn-primary"
+                        id="selectButton"
+                        data-backdrop="static"
+                        data-toggle="modal"
+                        data-target="#exampleModalCenter"
+                        hidden
+                        ignoreBackdropClick="false"> Launch demo modal </button>
+                <!-- Modal -->
+                <div class="modalBackdrop"
+                     id="modalBackdrop"></div>
+                <div class="
+                     modal
+                     fade"
+                     id="exampleModalCenter"
+                     tabindex="-1"
+                     role="dialog"
+                     aria-labelledby="exampleModalCenterTitle"
+                     aria-hidden="static">
+                    <div class="modal-dialog modal-dialog-centered"
+                         role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"
+                                    id="exampleModalLongTitle">My selected activities to enquire:
+                                </h5>
+                                <button type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                        onclick="unselect()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body m-3"
+                                 id="result"></div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                        class="btn btn-success"
+                                        data-dismiss="modal"
+                                        onclick="unselect()">Back to Activites</button>
+                                <button type="button"
+                                        class="btn btn-primary">Get info</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main> <!-- End Main Content -->
@@ -200,7 +255,8 @@
         <!-- <script src="js/digclock.js"></script> -->
         <!-- PARTNERS -->
         <!-- <script src="js/site_script.js"></script> -->
-        <!-- <script src="js/activity.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/activity.js"></script>
         <!-- Bootstrap jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Bootstrap Popper -->
